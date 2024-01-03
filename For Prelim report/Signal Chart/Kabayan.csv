@@ -1,0 +1,568 @@
+geocode,province,municipality,signal
+PH168503000,Dinagat Islands,Dinagat,2
+PH168505000,Dinagat Islands,Loreto,2
+PH168504000,Dinagat Islands,Libjo,2
+PH168506000,Dinagat Islands,San Jose,2
+PH168502000,Dinagat Islands,Cagdianao,2
+PH168501000,Dinagat Islands,Basilisa,2
+PH168507000,Dinagat Islands,Tubajon,2
+PH166708001,Surigao del Norte,Siargao - Bucas Grande Group,2
+PH166714000,Surigao del Norte,Mainit,2
+PH166702000,Surigao del Norte,Bacuag,2
+PH166725000,Surigao del Norte,Tagana-An,2
+PH166727000,Surigao del Norte,Tubod,2
+PH166711000,Surigao del Norte,Gigaquit,2
+PH166706000,Surigao del Norte,Claver,2
+PH166715000,Surigao del Norte,Malimono,2
+PH166717000,Surigao del Norte,Placer,2
+PH166701000,Surigao del Norte,Alegria,2
+PH166719000,Surigao del Norte,San Francisco,2
+PH166722000,Surigao del Norte,Sison,2
+PH166724000,Surigao del Norte,Surigao City,2
+PH166810000,Surigao del Sur,Lanuza,2
+PH166816000,Surigao del Sur,San Miguel,2
+PH166818000,Surigao del Sur,Tago,2
+PH166806000,Surigao del Sur,Carmen,2
+PH166808000,Surigao del Sur,Cortes,2
+PH166802000,Surigao del Sur,Bayabas,2
+PH166804000,Surigao del Sur,Cagwait,2
+PH166811000,Surigao del Sur,Lianga,2
+PH166817000,Surigao del Sur,Tagbina,2
+PH166819000,Surigao del Sur,City of Tandag,2
+PH166813000,Surigao del Sur,Madrid,2
+PH166815000,Surigao del Sur,San Agustin,2
+PH166803000,Surigao del Sur,City of Bislig,2
+PH166805000,Surigao del Sur,Cantilan,2
+PH166801000,Surigao del Sur,Barobo,2
+PH166807000,Surigao del Sur,Carrascal,2
+PH166809000,Surigao del Sur,Hinatuan,2
+PH166812000,Surigao del Sur,Lingig,2
+PH166814000,Surigao del Sur,Marihatag,2
+PH112505000,Davao Oriental,Cateel,2
+PH160204000,Agusan del Norte,Carmen,1
+PH160206000,Agusan del Norte,Kitcharao,2
+PH160202000,Agusan del Norte,Butuan City,2
+PH160208000,Agusan del Norte,Magallanes,2
+PH160211000,Agusan del Norte,Tubay,2
+PH160201000,Agusan del Norte,Buenavista,1
+PH160203000,Agusan del Norte,City of Cabadbaran,2
+PH160210000,Agusan del Norte,Santiago,2
+PH160212000,Agusan del Norte,Remedios T. Romualdez,2
+PH160209000,Agusan del Norte,Nasipit,1
+PH160205000,Agusan del Norte,Jabonga,2
+PH160207000,Agusan del Norte,Las Nieves,1
+PH086405000,Southern Leyte,Libagon,1
+PH086401000,Southern Leyte,Anahawan,1
+PH086403000,Southern Leyte,Hinunangan,1
+PH086407000,Southern Leyte,City of Maasin,1
+PH086414000,Southern Leyte,San Juan,1
+PH086416000,Southern Leyte,Silago,1
+PH086410000,Southern Leyte,Padre Burgos,1
+PH086412000,Southern Leyte,Saint Bernard,1
+PH086409000,Southern Leyte,Malitbog,1
+PH086402000,Southern Leyte,Bontoc,1
+PH086418000,Southern Leyte,Tomas Oppus,1
+PH086404000,Southern Leyte,Hinundayan,1
+PH086406000,Southern Leyte,Liloan,1
+PH086408000,Southern Leyte,Macrohon,1
+PH086411000,Southern Leyte,Pintuyan,1
+PH086413000,Southern Leyte,San Francisco,1
+PH086419000,Southern Leyte,Limasawa,1
+PH086415000,Southern Leyte,San Ricardo,1
+PH086417000,Southern Leyte,Sogod,1
+PH083731000,Leyte,Mahaplag,1
+PH083701000,Leyte,Abuyog,1
+PH083724000,Leyte,Javier,1
+PH083730000,Leyte,Macarthur,1
+PH083746000,Leyte,Tabontabon,1
+PH083728000,Leyte,La Paz,1
+PH083735000,Leyte,Mayorga,1
+PH083749000,Leyte,Tolosa,1
+PH083748000,Leyte,Tanauan,1
+PH083725000,Leyte,Julita,1
+PH083718000,Leyte,Dulag,1
+PH104308000,Misamis Oriental,Gingoog City,1
+PH104317000,Misamis Oriental,Magsaysay,1
+PH104319000,Misamis Oriental,Medina,1
+PH104325000,Misamis Oriental,Talisayan,1
+PH101803000,Camiguin,Mahinog,1
+PH101802000,Camiguin,Guinsiliban,1
+PH101804000,Camiguin,Mambajao,1
+PH101801000,Camiguin,Catarman,1
+PH101805000,Camiguin,Sagay,1
+PH104303000,Misamis Oriental,Balingoan,1
+PH104312000,Misamis Oriental,Kinoguitan,1
+PH086002000,Samar,Basey,1
+PH083739000,Leyte,Palo,1
+PH083747000,Leyte,Tacloban City,1
+PH086017000,Samar,Santa Rita,1
+PH083705000,Leyte,Babatngon,1
+PH082615000,Eastern Samar,Maydolong,1
+PH082604000,Eastern Samar,City of Borongan,1
+PH082618000,Eastern Samar,Quinapondan,1
+PH082609000,Eastern Samar,Guiuan,1
+PH082612000,Eastern Samar,Lawaan,1
+PH082602000,Eastern Samar,Balangiga,1
+PH082613000,Eastern Samar,Llorente,1
+PH082608000,Eastern Samar,Giporlos,1
+PH082619000,Eastern Samar,Salcedo,1
+PH082603000,Eastern Samar,Balangkayan,1
+PH082607000,Eastern Samar,General Macarthur,1
+PH082610000,Eastern Samar,Hernani,1
+PH082616000,Eastern Samar,Mercedes,1
+PH086010000,Samar,Marabut,1
+PH083734000,Leyte,Matalom,1
+PH083719000,Leyte,Hilongos,1
+PH083707000,Leyte,Bato,1
+PH112503000,Davao Oriental,Boston,2
+PH104302000,Misamis Oriental,Balingasag,1
+PH104306000,Misamis Oriental,Claveria,1
+PH101305000,Bukidnon,Impasug-Ong,1
+PH101313000,Bukidnon,Malitbog,1
+PH101314000,Bukidnon,Manolo Fortich,1
+PH101319000,Bukidnon,Sumilao,1
+PH104326000,Misamis Oriental,Villanueva,1
+PH104311000,Misamis Oriental,Jasaan,1
+PH104324000,Misamis Oriental,Tagoloan,1
+PH104323000,Misamis Oriental,Sugbongcogon,1
+PH104304000,Misamis Oriental,Binuangan,1
+PH104322000,Misamis Oriental,Salay,1
+PH104313000,Misamis Oriental,Lagonglong,1
+PH083750000,Leyte,Tunga,1
+PH083741000,Leyte,Pastrana,1
+PH083743000,Leyte,San Miguel,1
+PH083733000,Leyte,Matag-Ob,1
+PH083713000,Leyte,Calubian,1
+PH083729000,Leyte,Leyte,1
+PH083715000,Leyte,Carigara,1
+PH083717000,Leyte,Dagami,1
+PH083721000,Leyte,Inopacan,1
+PH083723000,Leyte,Jaro,1
+PH083742000,Leyte,San Isidro,1
+PH083744000,Leyte,Santa Fe,1
+PH083703000,Leyte,Albuera,1
+PH083751000,Leyte,Villaba,1
+PH083740000,Leyte,Palompon,1
+PH083736000,Leyte,Merida,1
+PH083738000,Leyte,Ormoc City,1
+PH083722000,Leyte,Isabel,1
+PH083714000,Leyte,Capoocan,1
+PH083702000,Leyte,Alangalang,1
+PH083720000,Leyte,Hindang,1
+PH083708000,Leyte,City of Baybay,1
+PH083710000,Leyte,Burauen,1
+PH083745000,Leyte,Tabango,1
+PH083726000,Leyte,Kananga,1
+PH083706000,Leyte,Barugo,1
+PH072238001,Cebu,Camotes Islands,1
+PH071223000,Bohol,Guindulman,1
+PH071246000,Bohol,Ubay,1
+PH071202000,Bohol,Alicia,1
+PH071248000,Bohol,Bien Unido,1
+PH071244000,Bohol,Trinidad,1
+PH071234000,Bohol,Pilar,1
+PH071225000,Bohol,Jagna,1
+PH071217000,Bohol,Dagohoy,1
+PH071220000,Bohol,Dimiao,1
+PH071211000,Bohol,Candijay,1
+PH071203000,Bohol,Anda,1
+PH071243000,Bohol,Talibon,1
+PH071238000,Bohol,San Miguel,1
+PH071247000,Bohol,Valencia,1
+PH071235000,Bohol,Pres. Carlos P. Garcia,1
+PH071222000,Bohol,Garcia Hernandez,1
+PH071231000,Bohol,Mabini,1
+PH071212000,Bohol,Carmen,1
+PH071221000,Bohol,Duero,1
+PH071218000,Bohol,Danao,1
+PH071240000,Bohol,Sierra Bullones,1
+PH104314000,Misamis Oriental,Laguindingan,1
+PH104316000,Misamis Oriental,Lugait,1
+PH104310000,Misamis Oriental,Initao,1
+PH104321000,Misamis Oriental,Opol,1
+PH104305000,Misamis Oriental,Cagayan de Oro City,1
+PH104307000,Misamis Oriental,City of El Salvador,1
+PH104309000,Misamis Oriental,Gitagum,1
+PH104315000,Misamis Oriental,Libertad,1
+PH104301000,Misamis Oriental,Alubijid,1
+PH104320000,Misamis Oriental,Naawan,1
+PH104318000,Misamis Oriental,Manticao,1
+PH101311000,Bukidnon,Libona,1
+PH101301000,Bukidnon,Baungon,1
+PH071204000,Bohol,Antequera,1
+PH071239000,Bohol,Sevilla,1
+PH071229000,Bohol,Loboc,1
+PH071242000,Bohol,Tagbilaran City,1
+PH071232000,Bohol,Maribojoc,1
+PH071227000,Bohol,Lila,1
+PH071215000,Bohol,Corella,1
+PH071230000,Bohol,Loon,1
+PH071213000,Bohol,Catigbian,1
+PH071201000,Bohol,Alburquerque,1
+PH071219000,Bohol,Dauis,1
+PH071241000,Bohol,Sikatuna,1
+PH071209000,Bohol,Buenavista,1
+PH071205000,Bohol,Baclayon,1
+PH071207000,Bohol,Batuan,1
+PH071236000,Bohol,Sagbayan,1
+PH071226000,Bohol,Getafe,1
+PH071228000,Bohol,Loay,1
+PH071245000,Bohol,Tubigon,1
+PH071224000,Bohol,Inabanga,1
+PH071233000,Bohol,Panglao,1
+PH071214000,Bohol,Clarin,1
+PH071210000,Bohol,Calape,1
+PH071216000,Bohol,Cortes,1
+PH071237000,Bohol,San Isidro,1
+PH071206000,Bohol,Balilihan,1
+PH071208000,Bohol,Bilar,1
+PH086019000,Samar,Talalora,1
+PH086021000,Samar,Villareal,1
+PH086013000,Samar,Pinabacdao,1
+PH160312000,Agusan del Sur,Trento,2
+PH160314000,Agusan del Sur,Sibagat,2
+PH160302000,Agusan del Sur,Bunawan,2
+PH160304000,Agusan del Sur,La Paz,1
+PH160306000,Agusan del Sur,Prosperidad,2
+PH160307000,Agusan del Sur,Rosario,2
+PH160311000,Agusan del Sur,Talacogon,1
+PH160313000,Agusan del Sur,Veruela,1
+PH160309000,Agusan del Sur,San Luis,1
+PH160305000,Agusan del Sur,Loreto,1
+PH160301000,Agusan del Sur,City of Bayugan,2
+PH160303000,Agusan del Sur,Esperanza,1
+PH160310000,Agusan del Sur,Santa Josefa,1
+PH160308000,Agusan del Sur,San Francisco,2
+PH101322000,Bukidnon,Cabanglasan,1
+PH101312000,Bukidnon,City of Malaybalay,1
+PH118207000,Davao de Oro,Monkayo,1
+PH118202000,Davao de Oro,Laak,1
+PH112501000,Davao Oriental,Baganga,1
+PH072237000,Cebu,Pinamungahan,1
+PH072239000,Cebu,Ronda,1
+PH072227000,Cebu,Liloan,1
+PH072229000,Cebu,Malabuyoc,1
+PH072217000,Cebu,Cebu City,1
+PH072233000,Cebu,Moalboal,1
+PH072219000,Cebu,Consolacion,1
+PH072235000,Cebu,Oslob,1
+PH072223000,Cebu,Danao City,1
+PH072225000,Cebu,Ginatilan,1
+PH072213000,Cebu,Borbon,1
+PH072215000,Cebu,Carmen,1
+PH072203000,Cebu,Alegria,1
+PH072205000,Cebu,Argao,1
+PH072221000,Cebu,Daanbantayan,1
+PH072252000,Cebu,Tuburan,1
+PH072211000,Cebu,City of Bogo,1
+PH072240000,Cebu,Samboan,1
+PH072201000,Cebu,Alcantara,1
+PH072248000,Cebu,Tabogon,1
+PH072207000,Cebu,Badian,1
+PH072209001,Cebu,Bantayan Islands,1
+PH072246000,Cebu,Sibonga,1
+PH072234000,Cebu,City of Naga,1
+PH072226000,Cebu,Lapu-Lapu City,1
+PH072214000,Cebu,City of Carcar,1
+PH072230000,Cebu,Mandaue City,1
+PH072216000,Cebu,Catmon,1
+PH072232000,Cebu,Minglanilla,1
+PH072251000,Cebu,Toledo City,1
+PH072220000,Cebu,Cordova,1
+PH072222000,Cebu,Dalaguete,1
+PH072212000,Cebu,Boljoon,1
+PH072202000,Cebu,Alcoy,1
+PH072218000,Cebu,Compostela,1
+PH072243000,Cebu,San Remigio,1
+PH072208000,Cebu,Balamban,1
+PH072224000,Cebu,Dumanjug,1
+PH072245000,Cebu,Santander,1
+PH072204000,Cebu,Aloguinsan,1
+PH072241000,Cebu,San Fernando,1
+PH072206000,Cebu,Asturias,1
+PH072210000,Cebu,Barili,1
+PH072231000,Cebu,Medellin,1
+PH072247000,Cebu,Sogod,1
+PH072249000,Cebu,Tabuelan,1
+PH072250000,Cebu,City of Talisay,1
+PH076103000,Siquijor,Lazi,1
+PH076105000,Siquijor,San Juan,1
+PH076102000,Siquijor,Larena,1
+PH076104000,Siquijor,Maria,1
+PH076106000,Siquijor,Siquijor,1
+PH076101000,Siquijor,Enrique Villanueva,1
+PH104205000,Misamis Occidental,Clarin,1
+PH104210000,Misamis Occidental,Ozamis City,1
+PH104216000,Misamis Occidental,Tudela,1
+PH104212000,Misamis Occidental,Plaridel,1
+PH104214000,Misamis Occidental,Sinacaban,1
+PH104202000,Misamis Occidental,Baliangao,1
+PH104204000,Misamis Occidental,Calamba,1
+PH104206000,Misamis Occidental,Concepcion,1
+PH104208000,Misamis Occidental,Lopez Jaena,1
+PH104213000,Misamis Occidental,Sapang Dalaga,1
+PH104215000,Misamis Occidental,Tangub City,1
+PH104211000,Misamis Occidental,Panaon,1
+PH104201000,Misamis Occidental,Aloran,1
+PH104217000,Misamis Occidental,Don Victoriano Chiongbian,1
+PH104207000,Misamis Occidental,Jimenez,1
+PH104209000,Misamis Occidental,Oroquieta City,1
+PH104203000,Misamis Occidental,Bonifacio,1
+PH103523000,Lanao del Norte,Pantar,1
+PH103513000,Lanao del Norte,Matungao,1
+PH103515000,Lanao del Norte,Nunungan,1
+PH103521000,Lanao del Norte,Tangcal,1
+PH103503000,Lanao del Norte,Baroy,1
+PH103505000,Lanao del Norte,Kapatagan,1
+PH103501000,Lanao del Norte,Bacolod,1
+PH103507000,Lanao del Norte,Kauswagan,1
+PH103509000,Lanao del Norte,Lala,1
+PH103514000,Lanao del Norte,Munai,1
+PH103516000,Lanao del Norte,Pantao Ragat,1
+PH103520000,Lanao del Norte,Tagoloan,1
+PH103522000,Lanao del Norte,Tubod,1
+PH103510000,Lanao del Norte,Linamon,1
+PH103512000,Lanao del Norte,Maigo,1
+PH103518000,Lanao del Norte,Salvador,1
+PH103502000,Lanao del Norte,Baloi,1
+PH103508000,Lanao del Norte,Kolambugan,1
+PH103504000,Lanao del Norte,Iligan City,1
+PH103506000,Lanao del Norte,Sultan Naga Dimaporo,1
+PH103511000,Lanao del Norte,Magsaysay,1
+PH103517000,Lanao del Norte,Poona Piagapo,1
+PH103519000,Lanao del Norte,Sapad,1
+PH153629000,Lanao del Sur,Tugaya,1
+PH153617000,Lanao del Sur,Marawi City,1
+PH153630000,Lanao del Sur,Wao,1
+PH153619000,Lanao del Sur,Mulondo,1
+PH153607000,Lanao del Sur,Butig,1
+PH153609000,Lanao del Sur,Ganassi,1
+PH153613000,Lanao del Sur,Madalum,1
+PH153615000,Lanao del Sur,Malabang,1
+PH153603000,Lanao del Sur,Balindong,1
+PH153605000,Lanao del Sur,Binidayan,1
+PH153634000,Lanao del Sur,Maguing,1
+PH153636000,Lanao del Sur,Lumbayanague,1
+PH153601000,Lanao del Sur,Bacolod-Kalawi,1
+PH153632000,Lanao del Sur,Calanogas,1
+PH153620000,Lanao del Sur,Pagayawan,1
+PH153641000,Lanao del Sur,Lumbaca-Unayan,1
+PH153622000,Lanao del Sur,Poona Bayabao,1
+PH153638000,Lanao del Sur,Tagoloan II,1
+PH153631000,Lanao del Sur,Marogong,1
+PH153628000,Lanao del Sur,Tubaran,1
+PH153624000,Lanao del Sur,Ditsaan-Ramain,1
+PH153626000,Lanao del Sur,Tamparan,1
+PH153614000,Lanao del Sur,Madamba,1
+PH153616000,Lanao del Sur,Marantao,1
+PH153610000,Lanao del Sur,Kapai,1
+PH153612000,Lanao del Sur,Lumbatan,1
+PH153602000,Lanao del Sur,Balabagan,1
+PH153618000,Lanao del Sur,Masiu,1
+PH153637000,Lanao del Sur,Bumbaran,1
+PH153639000,Lanao del Sur,Kapatagan,1
+PH153640000,Lanao del Sur,Sultan Dumalondong,1
+PH153633000,Lanao del Sur,Buadiposo-Buntong,1
+PH153635000,Lanao del Sur,Picong,1
+PH153604000,Lanao del Sur,Bayang,1
+PH153623000,Lanao del Sur,Pualas,1
+PH153606000,Lanao del Sur,Bubong,1
+PH153625000,Lanao del Sur,Saguiaran,1
+PH153621000,Lanao del Sur,Piagapo,1
+PH153611000,Lanao del Sur,Lumba-Bayabao,1
+PH153627000,Lanao del Sur,Taraka,1
+PH101304000,Bukidnon,Don Carlos,1
+PH101306000,Bukidnon,Kadingilan,1
+PH101308000,Bukidnon,Kibawe,1
+PH101321000,Bukidnon,City of Valencia,1
+PH101309000,Bukidnon,Kitaotao,1
+PH101315000,Bukidnon,Maramag,1
+PH101317000,Bukidnon,Quezon,1
+PH101307000,Bukidnon,Kalilangan,1
+PH101303000,Bukidnon,Dangcagan,1
+PH101320000,Bukidnon,Talakag,1
+PH101310000,Bukidnon,Lantapan,1
+PH101316000,Bukidnon,Pangantucan,1
+PH101318000,Bukidnon,San Fernando,1
+PH101302000,Bukidnon,Damulog,1
+PH112318000,Davao del Norte,Santo Tomas,1
+PH112314000,Davao del Norte,New Corella,1
+PH112323000,Davao del Norte,Braulio E. Dujali,1
+PH112315000,Davao del Norte,City of Panabo,1
+PH112301000,Davao del Norte,Asuncion,1
+PH112319000,Davao del Norte,City of Tagum,1
+PH112322000,Davao del Norte,Talaingod,1
+PH112303000,Davao del Norte,Carmen,1
+PH112305000,Davao del Norte,Kapalong,1
+PH112324000,Davao del Norte,San Isidro,1
+PH118206000,Davao de Oro,Mawab,1
+PH118208000,Davao de Oro,Montevista,1
+PH118205000,Davao de Oro,Maragusan,1
+PH118210000,Davao de Oro,New Bataan,1
+PH118201000,Davao de Oro,Compostela,1
+PH118203000,Davao de Oro,Mabini,1
+PH118209000,Davao de Oro,Nabunturan,1
+PH118204000,Davao de Oro,Maco,1
+PH118211000,Davao de Oro,Pantukan,1
+PH112508000,Davao Oriental,Manay,1
+PH112504000,Davao Oriental,Caraga,1
+PH112402000,Davao del Sur,Davao City,1
+PH124718000,Cotabato,Arakan,1
+PH124702000,Cotabato,Carmen,1
+PH124716000,Cotabato,Banisilan,1
+PH124701000,Cotabato,Alamada,1
+PH153802000,Maguindanao del Norte,Buldon,1
+PH153818000,Maguindanao del Norte,Barira,1
+PH153809000,Maguindanao del Norte,Matanog,1
+PH124713000,Cotabato,President Roxas,1
+PH124703000,Cotabato,Kabacan,1
+PH124708000,Cotabato,Matalam,1
+PH124715000,Cotabato,Antipas,1
+PH124706000,Cotabato,Magpet,1
+PH074604000,Negros Oriental,Bais City,1
+PH074606000,Negros Oriental,City of Bayawan,1
+PH074610000,Negros Oriental,Dumaguete City,1
+PH074617000,Negros Oriental,San Jose,1
+PH074619000,Negros Oriental,Siaton,1
+PH074623000,Negros Oriental,Valencia,1
+PH074625000,Negros Oriental,Zamboanguita,1
+PH074613000,Negros Oriental,La Libertad,1
+PH074615000,Negros Oriental,Manjuyod,1
+PH074603000,Negros Oriental,Bacong,1
+PH074621000,Negros Oriental,City of Tanjay,1
+PH074605000,Negros Oriental,Basay,1
+PH074611000,Negros Oriental,City of Guihulngan,1
+PH074601000,Negros Oriental,Amlan,1
+PH074607000,Negros Oriental,Bindoy,1
+PH074609000,Negros Oriental,Dauin,1
+PH074614000,Negros Oriental,Mabinay,1
+PH074616000,Negros Oriental,Pamplona,1
+PH074620000,Negros Oriental,Sibulan,1
+PH074622000,Negros Oriental,Tayasan,1
+PH074612000,Negros Oriental,Jimalalud,1
+PH074618000,Negros Oriental,Santa Catalina,1
+PH074602000,Negros Oriental,Ayungon,1
+PH074624000,Negros Oriental,Vallehermoso,1
+PH074608000,Negros Oriental,Canlaon City,1
+PH064514000,Negros Occidental,Isabela,1
+PH064516000,Negros Occidental,La Carlota City,1
+PH064504000,Negros Occidental,Cadiz City,1
+PH064506000,Negros Occidental,Candoni,1
+PH064502000,Negros Occidental,Bago City,1
+PH064508000,Negros Occidental,Enrique B. Magalona,1
+PH064527000,Negros Occidental,City of Sipalay,1
+PH064529000,Negros Occidental,Toboso,1
+PH064530000,Negros Occidental,Valladolid,1
+PH064532000,Negros Occidental,Salvador Benedicto,1
+PH064523000,Negros Occidental,Sagay City,1
+PH064525000,Negros Occidental,San Enrique,1
+PH064513000,Negros Occidental,Ilog,1
+PH064515000,Negros Occidental,City of Kabankalan,1
+PH064511000,Negros Occidental,Hinigaran,1
+PH064501000,Negros Occidental,Bacolod City,1
+PH064517000,Negros Occidental,La Castellana,1
+PH064519000,Negros Occidental,Moises Padilla,1
+PH064507000,Negros Occidental,Cauayan,1
+PH064520000,Negros Occidental,Murcia,1
+PH064509000,Negros Occidental,City of Escalante,1
+PH064503000,Negros Occidental,Binalbagan,1
+PH064505000,Negros Occidental,Calatrava,1
+PH064524000,Negros Occidental,San Carlos City,1
+PH064526000,Negros Occidental,Silay City,1
+PH064522000,Negros Occidental,Pulupandan,1
+PH064510000,Negros Occidental,City of Himamaylan,1
+PH064512000,Negros Occidental,Hinoba-An,1
+PH064531000,Negros Occidental,City of Victorias,1
+PH064528000,Negros Occidental,City of Talisay,1
+PH064521000,Negros Occidental,Pontevedra,1
+PH064518000,Negros Occidental,Manapla,1
+PH097215000,Zamboanga del Norte,Siayan,1
+PH097218000,Zamboanga del Norte,Sindangan,1
+PH097222000,Zamboanga del Norte,Jose Dalman,1
+PH097207000,Zamboanga del Norte,Manukan,1
+PH097211000,Zamboanga del Norte,Pres. Manuel A. Roxas,1
+PH097214000,Zamboanga del Norte,Sergio Osmeña Sr.,1
+PH097203000,Zamboanga del Norte,Katipunan,1
+PH097202000,Zamboanga del Norte,Dipolog City,1
+PH097210000,Zamboanga del Norte,Polanco,1
+PH097208000,Zamboanga del Norte,Mutia,1
+PH097209000,Zamboanga del Norte,Piñan,1
+PH097201000,Zamboanga del Norte,Dapitan City,1
+PH097217000,Zamboanga del Norte,Sibutad,1
+PH097204000,Zamboanga del Norte,La Libertad,1
+PH097212000,Zamboanga del Norte,Rizal,1
+PH097318000,Zamboanga del Sur,Midsalip,1
+PH097312000,Zamboanga del Sur,Labangan,1
+PH097330000,Zamboanga del Sur,Tukuran,1
+PH097302000,Zamboanga del Sur,Aurora,1
+PH097340000,Zamboanga del Sur,Sominot,1
+PH097323000,Zamboanga del Sur,Ramon Magsaysay,1
+PH097328000,Zamboanga del Sur,Tambulig,1
+PH097308000,Zamboanga del Sur,Dumingag,1
+PH097315000,Zamboanga del Sur,Mahayag,1
+PH097337000,Zamboanga del Sur,Josefina,1
+PH097319000,Zamboanga del Sur,Molave,1
+PH112511000,Davao Oriental,Tarragona,1
+PH112507000,Davao Oriental,Lupon,1
+PH112502000,Davao Oriental,Banaybanay,1
+PH112317000,Davao del Norte,Island Garden City of Samal,1
+PH067903000,Guimaras,Nueva Valencia,1
+PH067902000,Guimaras,Jordan,1
+PH067904000,Guimaras,San Lorenzo,1
+PH067901000,Guimaras,Buenavista,1
+PH067905000,Guimaras,Sibunag,1
+PH175308000,Palawan,Cagayancillo Islands,1
+PH097341000,Zamboanga del Sur,Vincenzo A. Sagun,1
+PH097343000,Zamboanga del Sur,Guipos,1
+PH097305000,Zamboanga del Sur,Dimataling,1
+PH097307000,Zamboanga del Sur,Dumalinao,1
+PH097333000,Zamboanga del Sur,Lakewood,1
+PH097306000,Zamboanga del Sur,Dinas,1
+PH097325000,Zamboanga del Sur,San Pablo,1
+PH097344000,Zamboanga del Sur,Tigbao,1
+PH097327000,Zamboanga del Sur,Tabina,1
+PH097311000,Zamboanga del Sur,Kumalarang,1
+PH097313000,Zamboanga del Sur,Lapuyan,1
+PH097338000,Zamboanga del Sur,Pitogo,1
+PH097317000,Zamboanga del Sur,Margosatubig,1
+PH097324000,Zamboanga del Sur,San Miguel,1
+PH097303000,Zamboanga del Sur,Bayog,1
+PH097322000,Zamboanga del Sur,Pagadian City,1
+PH098305000,Zamboanga Sibugay,Ipil,1
+PH098311000,Zamboanga Sibugay,Payao,1
+PH098307000,Zamboanga Sibugay,Mabuhay,1
+PH098309000,Zamboanga Sibugay,Naga,1
+PH098313000,Zamboanga Sibugay,Siay,1
+PH098315000,Zamboanga Sibugay,Titay,1
+PH098303000,Zamboanga Sibugay,Diplahan,1
+PH098301000,Zamboanga Sibugay,Alicia,1
+PH098306000,Zamboanga Sibugay,Kabasalan,1
+PH098308000,Zamboanga Sibugay,Malangas,1
+PH098312000,Zamboanga Sibugay,Roseller Lim,1
+PH098314000,Zamboanga Sibugay,Talusan,1
+PH098310000,Zamboanga Sibugay,Olutanga,1
+PH098316000,Zamboanga Sibugay,Tungawan,1
+PH098302000,Zamboanga Sibugay,Buug,1
+PH098304000,Zamboanga Sibugay,Imelda,1
+PH097219000,Zamboanga del Norte,Siocon,1
+PH097224000,Zamboanga del Norte,Baliguian,1
+PH097223000,Zamboanga del Norte,Gutalac,1
+PH097205000,Zamboanga del Norte,Labason,1
+PH097227000,Zamboanga del Norte,Kalawit,1
+PH097221000,Zamboanga del Norte,Tampilisan,1
+PH097206000,Zamboanga del Norte,Liloy,1
+PH097213000,Zamboanga del Norte,Salug,1
+PH097225000,Zamboanga del Norte,Godod,1
+PH097226000,Zamboanga del Norte,Bacungan,1
+PH124705000,Cotabato,Libungan,1
+PH124711000,Cotabato,Pigkawayan,1
+PH153811000,Maguindanao del Norte,Parang,1
+PH153812000,Maguindanao del Norte,Sultan Kudarat,1
+PH153824000,Maguindanao del Norte,Sultan Mastura,1
+PH175324000,Palawan,Sofronio Española,1
+PH175306000,Palawan,Brooke's Point,1
+PH175305000,Palawan,Bataraza,1
+PH175304000,Palawan,Balabac,1
+PH175323000,Palawan,Rizal,1
+PH175317000,Palawan,Quezon,1
+PH175315000,Palawan,Narra,1

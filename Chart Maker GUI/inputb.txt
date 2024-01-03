@@ -1,0 +1,4 @@
+D:/Ezra/Python/Test/PH202301.txt
+D:/Ezra/PAGASA/GSMAP/GSMAP data/2023/Amang
+D:/Ezra/Python/Test/Amang.csv
+D:/Ezra/Python/Test/amang gui rr.jpg
