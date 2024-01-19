@@ -7,11 +7,13 @@ from mpl_toolkits.basemap import Basemap
 from matplotlib.colors import ListedColormap
 import os
 ########################################################################################################################
+script = os.path.dirname(os.path.abspath(__file__))
+
 #  File name of the chart
-save_name = 'D:/Ezra/Python/Test/01 Amang.png'
+save_name = 'Egay.png'
 
 # Path of the directory
-path = 'D:/Ezra/PAGASA/GSMAP/2023/Amang'
+path = '/home/ezra/Documents/GSMAP/2023/Egay'
 
 ########################################################################################################################
 # Store the files in a list
@@ -40,7 +42,7 @@ longitude=np.linspace(0.05, 359.95, 3600)
 latitude=np.linspace(59.95, -59.95, 1200)
 xmesh_model, ymesh_model = np.meshgrid(longitude, latitude, sparse=False)
 
-fig, ax = plt.subplots(figsize=(12,12))
+fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(12,12))
 
 m = Basemap(llcrnrlat=4.5,urcrnrlat=24,llcrnrlon=113,urcrnrlon=128,lat_ts=20,resolution='h')
 m.readshapefile('Provinces','Provinces')
@@ -63,14 +65,11 @@ norm = matplotlib.colors.BoundaryNorm(boundaries, cmap.N, clip=True)
 # Plot the rainfall on the basemap
 cs = ax.pcolormesh(lon_map,lat_map,rainfall, cmap=cmap, norm=norm)
 
-# Legend underneath the figure
-cbaxes = fig.add_axes([0.164, 0.06, 0.7, 0.02])
-
-cbar = fig.colorbar(cs, pad="5%", orientation="horizontal",
-                    ticks=[0, 10, 25, 50, 100, 200, 300, 500, 5000], cax=cbaxes)
-cbar.ax.set_xticklabels([' ', '10', '25', '50', '100', '200', '300', '500', ' '], fontsize=10)
+# Add colorbar
+cbar = plt.colorbar(cs, ax=ax, orientation='horizontal', ticks=[0, 10, 25, 50, 100, 200, 300, 500, 5000], pad=0.02, fraction=0.05, aspect=10)
 cbar.set_label('mm', size=10)
-cbar.ax.tick_params(size=0)
+cbar.ax.set_xticklabels([' ', '10', '25', '50', '100', '200', '300', '500', ' '], fontsize=10)
+
 
 #######################################################################################################################
 # Mask the ocean
