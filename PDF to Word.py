@@ -1,35 +1,27 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep 15 09:15:38 2023
+from pdf2image import convert_from_path
+import pytesseract
+from pytesseract import Output
+from docx import Document
 
-@author: WF026
-"""
+def pdf_to_images(pdf_path):
+    return convert_from_path(pdf_path)
 
-import os
-from pdf2docx import Converter  # Import the Converter class from pdf2docx
+def ocr_image(image):
+    return pytesseract.image_to_string(image, output_type=Output.STRING)
 
-# Directory containing your PDF files
-pdf_directory = 'D:/Ezra/Python/Test/pdf'
+def create_docx(text, docx_path):
+    doc = Document()
+    doc.add_paragraph(text)
+    doc.save(docx_path)
 
-# Output directory for the DOCX files
-docx_directory = 'D:/Ezra/Python/Test/pdf to word'
+def convert_pdf_to_docx(pdf_path, docx_path):
+    images = pdf_to_images(pdf_path)
+    text = ''
+    for image in images:
+        text += ocr_image(image) + '\n\n'  # Separate pages with new lines
+    create_docx(text, docx_path)
 
-# Create the output directory if it doesn't exist
-if not os.path.exists(docx_directory):
-    os.makedirs(docx_directory)
-
-# Iterate through the PDF files in the input directory
-for filename in os.listdir(pdf_directory):
-    if filename.endswith('.pdf'):
-        pdf_path = os.path.join(pdf_directory, filename)
-        docx_filename = os.path.splitext(filename)[0] + '.docx'
-        docx_path = os.path.join(docx_directory, docx_filename)
-
-        # Convert PDF to DOCX
-        cv = Converter(pdf_path)
-        cv.convert(docx_path, start=0, end=None)
-        cv.close()
-
-        print(f"Converted: {pdf_path} to {docx_path}")
-
-print("Conversion complete.")
+# Example usage
+pdf_path = r'C:\Users\Bulquerin\Downloads\WD Memorandum (March 27, 2024) - Drinking Incident reported last 22 March 2024_Jun Ezra Bulquerin.pdf'
+docx_path = r'C:\Users\Bulquerin\Downloads\WD Memorandum (March 27, 2024) - Drinking Incident reported last 22 March 2024_Jun Ezra Bulquerin.docx'
+convert_pdf_to_docx(pdf_path, docx_path)
