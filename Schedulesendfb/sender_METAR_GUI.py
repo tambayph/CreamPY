@@ -18,7 +18,7 @@ CONTACT_NAME = "ATS-PAGASA"
 MESSAGE_URL = "https://www.facebook.com/messages/t/6623903127675852"
 # MESSAGE_URL = "https://www.facebook.com/messages/e2ee/t/27014261771521844" #sample
 CHROME_PROFILE_PATH = "user-data-dir=C:/Users/vprsd/chrome-selenium-profile"
-CHROMEDRIVER_PATH = "C:/Users/vprsd/Downloads/chromedriver-win64/chromedriver.exe"
+CHROMEDRIVER_PATH = "C:/chromedriver-win64/chromedriver.exe"
 MESSAGE_INPUT_XPATH = (
     '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div/'
     'div[1]/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div[1]/p'
@@ -36,7 +36,7 @@ def log_message(msg):
 # === Function to save sent messages to a txt file ===
 def save_sent_message(metar):
     try:
-        with open("G:/My Drive/METAR/2025/08 AUG_25.txt", "a", encoding="utf-8") as f:  # Append mode
+        with open("G:/My Drive/METAR/2025/09 SEP_25.txt", "a", encoding="utf-8") as f:  # Append mode
             timestamp = datetime.now(timezone.utc).strftime("%H%M")  # UTC time
             f.write(f"\n{metar}/{timestamp}")
         log_message("[INFO] Message saved to sent_messages.txt (UTC time)")
