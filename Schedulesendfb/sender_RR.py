@@ -29,7 +29,7 @@ chrome_options = Options()
 chrome_options.add_argument("user-data-dir=C:/Users/vprsd/chrome-selenium-profile")
 
 # === ChromeDriver Service ===
-service = Service(executable_path="C:/Users/vprsd/Downloads/chromedriver-win64/chromedriver.exe")
+service = Service(executable_path="C:/chromedriver-win64/chromedriver.exe")
 
 # === Start Chrome with Profile ===
 driver = webdriver.Chrome(service=service, options=chrome_options)

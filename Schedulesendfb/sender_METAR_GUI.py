@@ -12,6 +12,8 @@ from datetime import datetime, timezone
 import threading
 from tkcalendar import DateEntry
 from datetime import datetime, timezone
+import calendar
+import os
 
 # === Your existing constants ===
 CONTACT_NAME = "ATS-PAGASA"
@@ -36,10 +38,27 @@ def log_message(msg):
 # === Function to save sent messages to a txt file ===
 def save_sent_message(metar):
     try:
-        with open("G:/My Drive/METAR/2025/09 SEP_25.txt", "a", encoding="utf-8") as f:  # Append mode
-            timestamp = datetime.now(timezone.utc).strftime("%H%M")  # UTC time
+        # Get current UTC time
+        now = datetime.now(timezone.utc)
+
+        # Build the filename dynamically based on current month/year
+        month_num = now.strftime("%m")          # e.g. "10"
+        month_abbr = now.strftime("%b").upper() # e.g. "OCT"
+        year_suffix = now.strftime("%y")        # e.g. "25"
+        filename = f"{month_num} {month_abbr}_{year_suffix}.txt"
+
+        # Define full path
+        folder = f"G:/My Drive/METAR/{now.strftime('%Y')}"
+        os.makedirs(folder, exist_ok=True)  # Create folder if it doesn't exist
+        filepath = os.path.join(folder, filename)
+
+        # Write the METAR message
+        timestamp = now.strftime("%H%M")  # UTC time
+        with open(filepath, "a", encoding="utf-8") as f:
             f.write(f"\n{metar}/{timestamp}")
-        log_message("[INFO] Message saved to sent_messages.txt (UTC time)")
+
+        log_message(f"[INFO] Message saved to {filename} (UTC time)")
+
     except Exception as e:
         log_message(f"[ERROR] Could not save message: {e}")
 
