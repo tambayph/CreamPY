@@ -19,7 +19,7 @@ import os
 CONTACT_NAME = "ATS-PAGASA"
 MESSAGE_URL = "https://www.facebook.com/messages/t/6623903127675852"
 # MESSAGE_URL = "https://www.facebook.com/messages/e2ee/t/27014261771521844" #sample
-CHROME_PROFILE_PATH = "user-data-dir=C:\Users\ROXAS\AppData\Local\Google\Chrome\User Data\Profile 1"
+CHROME_PROFILE_PATH = "user-data-dir=C:/Users/ROXAS/AppData/Local/Google/Chrome/User Data/Profile 1"
 CHROMEDRIVER_PATH = "C:/chromedriver-win64/chromedriver.exe"
 MESSAGE_INPUT_XPATH = (
     '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div/'
@@ -148,20 +148,37 @@ time_entry = tk.Entry(root)
 time_entry.pack()
 
 tk.Label(root, text="METAR:").pack(pady=5)
-metar_entry = tk.Text(root, height=3, width=50)
+metar_entry = tk.Text(root, height=3, width=100)
 metar_entry.pack()
 
 frame = tk.Frame(root)
 frame.pack(pady=10)
 
-send_button = tk.Button(frame, text="Send Message", command=on_send)
-send_button.pack(side=tk.LEFT, padx=5)
+send_button = tk.Button(
+    frame,
+    text="Send Message",
+    command=on_send,
+    bg="#007BFF",        # blue background (like Windows/Bootstrap blue)
+    fg="white",          # white text
+    activebackground="#0056b3",  # darker blue when pressed
+    activeforeground="white",
+    relief="raised",
+    font=("Segoe UI", 10, "bold")
+)
+send_button.pack(side=tk.LEFT, padx=5, pady=5)
 
-cancel_button = tk.Button(frame, text="Cancel", command=on_cancel)
+cancel_button = tk.Button(
+    frame,
+    text="Cancel",
+    command=on_cancel,
+    bg="red",       # background color
+    fg="white"      # text color
+)
 cancel_button.pack(side=tk.LEFT, padx=5)
 
+
 # === Log Box ===
-log_box = tk.Text(root, height=10, width=50)
+log_box = tk.Text(root, height=10, width=100)
 log_box.pack()
 
 root.mainloop()

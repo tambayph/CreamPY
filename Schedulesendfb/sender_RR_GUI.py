@@ -56,7 +56,7 @@ def start_automation():
 
         # === Chrome Options ===
         chrome_options = Options()
-        chrome_options.add_argument("user-data-dir=C:/Users/vprsd/chrome-selenium-profile")
+        chrome_options.add_argument("user-data-dir=C:/Users/ROXAS/AppData/Local/Google/Chrome/User Data/Profile 1")
 
         # === ChromeDriver Service ===
         service = Service(executable_path="C:/chromedriver-win64/chromedriver.exe")
