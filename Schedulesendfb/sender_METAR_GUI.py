@@ -19,7 +19,7 @@ import os
 CONTACT_NAME = "ATS-PAGASA"
 MESSAGE_URL = "https://www.facebook.com/messages/t/6623903127675852"
 # MESSAGE_URL = "https://www.facebook.com/messages/e2ee/t/27014261771521844" #sample
-CHROME_PROFILE_PATH = "user-data-dir=C:/Users/vprsd/chrome-selenium-profile"
+CHROME_PROFILE_PATH = "user-data-dir=C:\Users\ROXAS\AppData\Local\Google\Chrome\User Data\Profile 1"
 CHROMEDRIVER_PATH = "C:/chromedriver-win64/chromedriver.exe"
 MESSAGE_INPUT_XPATH = (
     '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div/'
