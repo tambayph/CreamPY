@@ -15,6 +15,17 @@ from tkcalendar import DateEntry
 # Global flag to control cancellation
 cancel_flag = threading.Event()
 
+# ======== DARK MODE COLORS ========
+BG_COLOR = "#1e1e1e"       # Background (deep gray)
+FG_COLOR = "#ffffff"       # Text (white)
+ENTRY_BG = "#2b2b2b"       # Entry background
+ENTRY_FG = "#ffffff"
+BTN_BG = "#3a3a3a"
+BTN_FG = "#ffffff"
+LOG_BG = "#121212"
+LOG_FG = "#00ff99"         # Neon green for log text
+HIGHLIGHT = "#00cc66"
+
 def start_automation():
     # Clear any previous cancel request
     cancel_flag.clear()
@@ -68,12 +79,10 @@ def start_automation():
         message_input_xpath = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div[1]/p'
 
         # 2nd Message
-        # driver.get("https://www.facebook.com/messages/e2ee/t/27014261771521844") #sample
         driver.get("https://www.facebook.com/messages/t/4130996670251437")
         message_input = wait.until(EC.presence_of_element_located((By.XPATH, message_input_xpath)))
         message_input.click()
 
-        # Assuming time_str is something like "00:30" or "15:45"
         hour = datetime.strptime(time_str, "%H:%M").hour
 
         if hour == 0:
@@ -109,40 +118,48 @@ def cancel_task():
 # === GUI ===
 root = tk.Tk()
 root.title("Facebook Auto/Schedule Message Sender for Rainfall")
-root.geometry("450x450")
+root.geometry("460x480")
+root.configure(bg=BG_COLOR)
 
-tk.Label(root, text="Date (click to pick):").pack()
-date_entry = DateEntry(root, date_pattern='yyyy-mm-dd')
-date_entry.pack()
+def style_widget(widget, bg=BG_COLOR, fg=FG_COLOR):
+    widget.configure(bg=bg, fg=fg)
 
-tk.Label(root, text="Time (HH:MM, UTC):").pack()
-time_entry = tk.Entry(root)
-time_entry.pack()
+# Labels and Entries
+tk.Label(root, text="Date (click to pick):", bg=BG_COLOR, fg=FG_COLOR).pack()
+date_entry = DateEntry(root, date_pattern='yyyy-mm-dd', background=ENTRY_BG, foreground=ENTRY_FG,
+                       borderwidth=2, headersbackground=ENTRY_BG, normalbackground=ENTRY_BG)
+date_entry.pack(pady=2)
 
-tk.Label(root, text="Rainfall (mm):").pack()
-rainfall_entry = tk.Entry(root)
-rainfall_entry.pack()
+tk.Label(root, text="Time (HH:MM, UTC):", bg=BG_COLOR, fg=FG_COLOR).pack()
+time_entry = tk.Entry(root, bg=ENTRY_BG, fg=ENTRY_FG, insertbackground=ENTRY_FG)
+time_entry.pack(pady=2)
 
-tk.Label(root, text="24HR RR (mm):").pack()
-rainfall24_entry = tk.Entry(root)
-rainfall24_entry.pack()
+tk.Label(root, text="Rainfall (mm):", bg=BG_COLOR, fg=FG_COLOR).pack()
+rainfall_entry = tk.Entry(root, bg=ENTRY_BG, fg=ENTRY_FG, insertbackground=ENTRY_FG)
+rainfall_entry.pack(pady=2)
 
-tk.Label(root, text="TSTM:").pack()
-TSTM_entry = tk.Entry(root)
-TSTM_entry.pack()
+tk.Label(root, text="24HR RR (mm):", bg=BG_COLOR, fg=FG_COLOR).pack()
+rainfall24_entry = tk.Entry(root, bg=ENTRY_BG, fg=ENTRY_FG, insertbackground=ENTRY_FG)
+rainfall24_entry.pack(pady=2)
 
-tk.Label(root, text="LTNG:").pack()
-LTNG_entry = tk.Entry(root)
-LTNG_entry.pack()
+tk.Label(root, text="TSTM:", bg=BG_COLOR, fg=FG_COLOR).pack()
+TSTM_entry = tk.Entry(root, bg=ENTRY_BG, fg=ENTRY_FG, insertbackground=ENTRY_FG)
+TSTM_entry.pack(pady=2)
+
+tk.Label(root, text="LTNG:", bg=BG_COLOR, fg=FG_COLOR).pack()
+LTNG_entry = tk.Entry(root, bg=ENTRY_BG, fg=ENTRY_FG, insertbackground=ENTRY_FG)
+LTNG_entry.pack(pady=2)
 
 # Buttons
-btn_frame = tk.Frame(root)
+btn_frame = tk.Frame(root, bg=BG_COLOR)
 btn_frame.pack(pady=10)
 
-tk.Button(btn_frame, text="Submit", command=run_in_thread).grid(row=0, column=0, padx=5)
-tk.Button(btn_frame, text="Cancel", command=cancel_task).grid(row=0, column=1, padx=5)
+tk.Button(btn_frame, text="Submit", bg=BTN_BG, fg=BTN_FG, activebackground=HIGHLIGHT,
+          command=run_in_thread, relief="flat", padx=10, pady=5).grid(row=0, column=0, padx=5)
+tk.Button(btn_frame, text="Cancel", bg=BTN_BG, fg=BTN_FG, activebackground="red",
+          command=cancel_task, relief="flat", padx=10, pady=5).grid(row=0, column=1, padx=5)
 
-log_text = tk.Text(root, height=10, width=50)
-log_text.pack()
+log_text = tk.Text(root, height=10, width=55, bg=LOG_BG, fg=LOG_FG, insertbackground=FG_COLOR, relief="flat")
+log_text.pack(pady=5)
 
 root.mainloop()

@@ -11,14 +11,12 @@ import time
 from datetime import datetime, timezone
 import threading
 from tkcalendar import DateEntry
-from datetime import datetime, timezone
 import calendar
 import os
 
-# === Your existing constants ===
+# === Constants ===
 CONTACT_NAME = "ATS-PAGASA"
 MESSAGE_URL = "https://www.facebook.com/messages/t/6623903127675852"
-# MESSAGE_URL = "https://www.facebook.com/messages/e2ee/t/27014261771521844" #sample
 CHROME_PROFILE_PATH = "user-data-dir=C:/Users/ROXAS/AppData/Local/Google/Chrome/User Data/Profile 1"
 CHROMEDRIVER_PATH = "C:/chromedriver-win64/chromedriver.exe"
 MESSAGE_INPUT_XPATH = (
@@ -32,28 +30,23 @@ cancel_flag = False  # Flag to cancel the scheduled send
 def log_message(msg):
     log_box.config(state="normal")
     log_box.insert(tk.END, msg + "\n")
-    log_box.see(tk.END)  # Auto-scroll
+    log_box.see(tk.END)
     log_box.config(state="disabled")
 
 # === Function to save sent messages to a txt file ===
 def save_sent_message(metar):
     try:
-        # Get current UTC time
         now = datetime.now(timezone.utc)
-
-        # Build the filename dynamically based on current month/year
-        month_num = now.strftime("%m")          # e.g. "10"
-        month_abbr = now.strftime("%b").upper() # e.g. "OCT"
-        year_suffix = now.strftime("%y")        # e.g. "25"
+        month_num = now.strftime("%m")
+        month_abbr = now.strftime("%b").upper()
+        year_suffix = now.strftime("%y")
         filename = f"{month_num} {month_abbr}_{year_suffix}.txt"
 
-        # Define full path
         folder = f"G:/My Drive/METAR/{now.strftime('%Y')}"
-        os.makedirs(folder, exist_ok=True)  # Create folder if it doesn't exist
+        os.makedirs(folder, exist_ok=True)
         filepath = os.path.join(folder, filename)
 
-        # Write the METAR message
-        timestamp = now.strftime("%H%M")  # UTC time
+        timestamp = now.strftime("%H%M")
         with open(filepath, "a", encoding="utf-8") as f:
             f.write(f"\n{metar}/{timestamp}")
 
@@ -66,10 +59,7 @@ def send_message(date_str, time_str, metar):
     global cancel_flag
     try:
         cancel_flag = False
-        scheduled_time = datetime.strptime(
-            f"{date_str} {time_str}", "%Y-%m-%d %H:%M"
-        ).replace(tzinfo=timezone.utc)
-
+        scheduled_time = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
         now_utc = datetime.now(timezone.utc)
 
         if now_utc < scheduled_time:
@@ -83,22 +73,16 @@ def send_message(date_str, time_str, metar):
         else:
             log_message("[INFO] Time is now or past, sending immediately.")
 
-        # === Chrome Options ===
         chrome_options = Options()
         chrome_options.add_argument(CHROME_PROFILE_PATH)
-
-        # === ChromeDriver Service ===
         service = Service(executable_path=CHROMEDRIVER_PATH)
 
-        # === Start Chrome with Profile ===
         log_message("[INFO] Launching Chrome browser...")
         driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.get(MESSAGE_URL)
 
         wait = WebDriverWait(driver, 30)
-        message_input = wait.until(
-            EC.presence_of_element_located((By.XPATH, MESSAGE_INPUT_XPATH))
-        )
+        message_input = wait.until(EC.presence_of_element_located((By.XPATH, MESSAGE_INPUT_XPATH)))
         message_input.click()
         message_input = driver.find_element(By.XPATH, MESSAGE_INPUT_XPATH)
         message_input.send_keys(metar)
@@ -107,10 +91,7 @@ def send_message(date_str, time_str, metar):
         time.sleep(5)
 
         log_message(f"[SUCCESS] Message sent to {CONTACT_NAME}!")
-
-        # === Save sent message to file ===
         save_sent_message(metar)
-
         driver.quit()
         messagebox.showinfo("Success", f"Message sent to {CONTACT_NAME}!")
     except Exception as e:
@@ -135,32 +116,47 @@ def on_cancel():
     cancel_flag = True
     log_message("[INFO] Cancel request received.")
 
+# === DARK MODE STYLES ===
+BG_COLOR = "#1e1e1e"
+FG_COLOR = "#ffffff"
+ENTRY_BG = "#2b2b2b"
+BTN_BLUE = "#0d6efd"
+BTN_BLUE_ACTIVE = "#084298"
+BTN_RED = "#dc3545"
+BTN_RED_ACTIVE = "#a71d2a"
+LOG_BG = "#111111"
+
 root = tk.Tk()
-root.title("METAR Auto/Schedule Messenger")
-root.geometry("500x400")
+root.title("METAR Auto/Schedule Messenger (Dark Mode)")
+root.geometry("500x450")
+root.config(bg=BG_COLOR)
 
-tk.Label(root, text="Date (click to pick):").pack()
-date_entry = DateEntry(root, date_pattern='yyyy-mm-dd')
-date_entry.pack()
+# === Labels and Entries ===
+def create_label(text):
+    return tk.Label(root, text=text, bg=BG_COLOR, fg=FG_COLOR, font=("Segoe UI", 10, "bold"))
 
-tk.Label(root, text="Time (HH:MM, UTC):").pack(pady=5)
-time_entry = tk.Entry(root)
+create_label("Date (click to pick):").pack()
+date_entry = DateEntry(root, date_pattern='yyyy-mm-dd', background=ENTRY_BG, foreground=FG_COLOR, borderwidth=1)
+date_entry.pack(pady=2)
+
+create_label("Time (HH:MM, UTC):").pack(pady=5)
+time_entry = tk.Entry(root, bg=ENTRY_BG, fg=FG_COLOR, insertbackground=FG_COLOR)
 time_entry.pack()
 
-tk.Label(root, text="METAR:").pack(pady=5)
-metar_entry = tk.Text(root, height=3, width=100)
+create_label("METAR:").pack(pady=5)
+metar_entry = tk.Text(root, height=3, width=100, bg=ENTRY_BG, fg=FG_COLOR, insertbackground=FG_COLOR)
 metar_entry.pack()
 
-frame = tk.Frame(root)
+frame = tk.Frame(root, bg=BG_COLOR)
 frame.pack(pady=10)
 
 send_button = tk.Button(
     frame,
     text="Send Message",
     command=on_send,
-    bg="#007BFF",        # blue background (like Windows/Bootstrap blue)
-    fg="white",          # white text
-    activebackground="#0056b3",  # darker blue when pressed
+    bg=BTN_BLUE,
+    fg="white",
+    activebackground=BTN_BLUE_ACTIVE,
     activeforeground="white",
     relief="raised",
     font=("Segoe UI", 10, "bold")
@@ -171,14 +167,17 @@ cancel_button = tk.Button(
     frame,
     text="Cancel",
     command=on_cancel,
-    bg="red",       # background color
-    fg="white"      # text color
+    bg=BTN_RED,
+    fg="white",
+    activebackground=BTN_RED_ACTIVE,
+    activeforeground="white",
+    relief="raised",
+    font=("Segoe UI", 10, "bold")
 )
 cancel_button.pack(side=tk.LEFT, padx=5)
 
-
 # === Log Box ===
-log_box = tk.Text(root, height=10, width=100)
-log_box.pack()
+log_box = tk.Text(root, height=10, width=100, bg=LOG_BG, fg=FG_COLOR, state="disabled", insertbackground=FG_COLOR)
+log_box.pack(pady=5)
 
 root.mainloop()
